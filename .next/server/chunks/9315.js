@@ -1,1 +1,0 @@
-"use strict";exports.id=9315,exports.ids=[9315],exports.modules={39315:(e,r,a)=>{a.r(r),a.d(r,{default:()=>o});var s=a(20997),t=a(16689),d=a(78174);let o=()=>((0,t.useEffect)(()=>((0,d.loadExternalResource)("/js/sakura.js","js").then(e=>{window.createSakura&&window.createSakura({})}),()=>window.destroySakura&&window.destroySakura()),[]),s.jsx(s.Fragment,{}))}};
