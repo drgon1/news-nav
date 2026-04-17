@@ -91,6 +91,7 @@ const nextConfig = {
     ignoreDuringBuilds: true
   },
   output: getOutput(),
+  basePath: '/santian',
   staticPageGenerationTimeout: 300,
 
   // 性能优化配置
