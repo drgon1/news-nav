@@ -63,7 +63,6 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            align-items: center;
             gap: 40px;
             padding: 40px 20px;
         }
@@ -126,7 +125,7 @@
             text-align: justify;
         }
         a {
-            color: #4a7c9b;
+            color: #1e6091;
             text-decoration: none;
         }
         a:hover {
@@ -139,6 +138,7 @@
         .footer {
             width: 100%;
             margin-top: 0;
+            background-color: transparent;
         }
         .footer-section {
             margin-bottom: 0;
@@ -189,6 +189,14 @@
             line-height: 1.75;
             letter-spacing: 0.5px;
         }
+        .news-summary {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+            margin-top: 6px;
+            padding-left: 4px;
+            border-left: 2px solid #e0e0e0;
+        }
         hr {
             margin-top: 32px;
             margin-bottom: 32px;
@@ -199,9 +207,8 @@
         .category-tabs {
             display: flex;
             gap: 10px;
-            margin-bottom: 30px;
+            margin: 0px 0 -20px 0;
             flex-wrap: wrap;
-            justify-content: center;
         }
         .category-tab {
             padding: 8px 16px;
@@ -227,6 +234,17 @@
             font-size: 12px;
             opacity: 0.8;
             margin-left: 4px;
+        }
+        .tagline {
+            font-size: 16px;
+            color: #4a7c9b;
+            font-weight: 500;
+            margin: 10px 0 20px 0;
+            padding: 10px 15px;
+            background: rgba(74,124,155,0.05);
+            border-left: 3px solid #4a7c9b;
+            border-radius: 4px;
+            text-align: center;
         }
     </style>
     <script>
@@ -273,97 +291,26 @@
         </div>
     </header>
     <div class="wrapper">
-<div class="category-tabs"><div class="category-tab active" data-category="all">全部</div><div class="category-tab" data-category="军事">军事 <span>8</span></div><div class="category-tab" data-category="财经">财经 <span>37</span></div><div class="category-tab" data-category="AI">AI <span>22</span></div><div class="category-tab" data-category="游戏">游戏 <span>5</span></div></div>
+        <div class="tagline">三分钟，看懂全天关键事</div>
+<div class="category-tabs"><div class="category-tab active" data-category="all">全部</div><div class="category-tab" data-category="军事">军事 <span>0</span></div><div class="category-tab" data-category="财经">财经 <span>0</span></div><div class="category-tab" data-category="AI">AI <span>0</span></div><div class="category-tab" data-category="游戏">游戏 <span>0</span></div></div>
         <div class="card" data-category="军事">
             <h2>军事</h2>
             <div class="list-wrapper">
-            <div class="list-item-row">                <div class="list-item-bullet">1</div>                <div class="list-item-text"><a href="https://www.toutiao.com/trending/7629684437424279067/" target="_blank">东部战区披露：日舰过航台海近14小时</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">2</div>                <div class="list-item-text"><a href="https://www.toutiao.com/trending/7629250890700111891/" target="_blank">外军大舰强闯海峡 我军舰缠斗驱离</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">3</div>                <div class="list-item-text"><a href="https://www.toutiao.com/trending/7629628169854651947/" target="_blank">中方回应日本自卫队舰艇进入台湾海峡</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">4</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626385704272036358/" target="_blank">突发!美伊突然停火，4月10日谈大事!</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">5</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626213554428953134/" target="_blank">特朗普扬言4小时摧毁伊朗!话音刚落，中方直接26次通话密集斡旋</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">6</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626306638999257651/" target="_blank">出大事了，伊朗精准斩首，数百名美军官生死未卜，特朗普恼羞成怒</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">7</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626371750820921890/" target="_blank">伊朗越打越猛!美媒反复追问中国同一个问题，就怕中国回答:是!</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">8</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626320772256039475/" target="_blank">四小时摧毁伊朗，法国提前动手，中方罕见表态，伊朗:美国中计了</a></div>            </div>
             </div>
         </div>
         <div class="card" data-category="财经">
             <h2>财经</h2>
             <div class="list-wrapper">
-            <div class="list-item-row">                <div class="list-item-bullet">1</div>                <div class="list-item-text"><a href="https://www.toutiao.com/trending/7629629232491216939/" target="_blank">从多场景看中国经济活力</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">2</div>                <div class="list-item-text"><a href="https://www.toutiao.com/trending/7629650762645176363/" target="_blank">证监会：对余某罚没10亿余元</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">3</div>                <div class="list-item-text"><a href="https://www.toutiao.com/trending/7629231341397770282/" target="_blank">四大一线城市房价全涨</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">4</div>                <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770109" target="_blank">中东紧张局势持续，美股勉强新高，纳指十二连涨，中概股指跑赢大盘，原油两连涨</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">5</div>                <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770230" target="_blank">霍尔木兹将开放，核谈判现曙光，道指涨超1%，WTI油价跳水跌超11%，白银涨5%</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">6</div>                <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770232" target="_blank">7家平台涉“幽灵外卖”被罚没近36亿元：拼多多15.22亿、美团7.46亿、阿里系6.3亿</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">7</div>                <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770209" target="_blank">创业板指再创近11年新高，光通信爆发，源杰科技成“新股王”，茅台跌4%，恒科指跌1%</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">8</div>                <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770222" target="_blank">长鑫存储、长江存储现“先款排产”，后者正进行“史诗级扩产”</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">9</div>                <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770214" target="_blank">高盛：AI的未来，要有光！</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">10</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2347485" target="_blank">一图看懂 | A股七姐妹vs美股七姐妹，今年谁更能涨？</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">11</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2347931" target="_blank">伊朗外长宣布谈判期间开放海峡 国际油价闪崩10%、纳指冲击13连涨</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">12</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2347509" target="_blank">证监会：2025年查办操纵市场获利超亿元案件19起</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">13</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2347744" target="_blank">国常会：听取自由贸易试验区建设情况汇报</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">14</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2347870" target="_blank">证监会全年罚没155亿！19起亿元级操纵案落网，执法工作呈现四大变化</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">15</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2347537" target="_blank">“寒王”股价十连涨！距茅台仅差5.5%，电子板块高价股频现，这些方向占比也高</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">16</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2347551" target="_blank">【数据看盘】近9亿元资金抢筹光迅科技 “北向+游资”合力买入云南锗业</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">17</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2347815" target="_blank">美股三大期指集体走高 奈飞盘前大跌近10% | 今夜看点</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">18</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2347473" target="_blank">【每日收评】创业板续创阶段新高！北证50午后飙涨近5%，算力产业链持续爆发</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">19</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2347614" target="_blank">两部门：调整平潭综合实验区有关增值税和消费税退税货物范围</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">20</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2347533" target="_blank">【焦点复盘】市场延续极致“深强沪弱”，科技线一骑绝尘，光模块龙头市值剑指1万亿</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">21</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2347609" target="_blank">南向资金追踪｜单周净买入超257亿港元 加仓泡泡玛特及中海油抛售腾讯</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">22</div>                <div class="list-item-text"><a href="https://www.36kr.com/newsflashes/3770915618996995" target="_blank">热门中概股美股盘前多数走强，拼多多涨超3%</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">23</div>                <div class="list-item-text"><a href="https://www.36kr.com/newsflashes/3770914477392384" target="_blank">美股大型科技股盘前多数上涨，奈飞跌超9%</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">24</div>                <div class="list-item-text"><a href="https://www.36kr.com/newsflashes/3770911795069442" target="_blank">臻镭科技：因信披违规将被实施其他风险警示，股票停牌</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">25</div>                <div class="list-item-text"><a href="https://www.36kr.com/newsflashes/3770902281863945" target="_blank">仕佳光子：拟12.65亿元投建高速光芯片与器件开发及产业化项目</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">26</div>                <div class="list-item-text"><a href="https://www.36kr.com/newsflashes/3770814016586505" target="_blank">3连板均瑶健康：公司业务不涉及保健食品的注册及生产，AKK菌粉销售目前对公司利润影响极小</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">27</div>                <div class="list-item-text"><a href="https://www.36kr.com/newsflashes/3770810949337856" target="_blank">雅化集团：全资子公司拟不超3.62亿元收购龙海安防51%股权</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">28</div>                <div class="list-item-text"><a href="https://www.36kr.com/newsflashes/3770797834060550" target="_blank">5连板博云新材：股东高创投4月14日至4月16日减持407.2万股 持股比例降至5%以下</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">29</div>                <div class="list-item-text"><a href="https://www.36kr.com/newsflashes/3770787908109064" target="_blank">金龙鱼：2025年归母净利润31.53亿元，同比增长26.01%</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">30</div>                <div class="list-item-text"><a href="https://www.36kr.com/newsflashes/3770778659111426" target="_blank">2连板可川科技：全资子公司可川光子正在积极地进行市场开拓工作，暂未形成营收</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">31</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626389762903163432/" target="_blank">Anthropic年化收入突破300亿美元 首超OpenAI</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">32</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626277288232960518/" target="_blank">游戏行业迎来密集新品上线周期，游戏ETF华夏(159869)涨5.56%</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">33</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626352034614084130/" target="_blank">A股:股民系好安全带，主力信号明确，4月9日周四将历史重演</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">34</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626185237462237738/" target="_blank">操盘必读:影响股市利好或利空消息_2026年4月8日_财经新闻</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">35</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626395192416813614/" target="_blank">突发!A股深夜三大利好出炉，4月走势要彻底变天了</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">36</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626370743428792882/" target="_blank">南方原油LOF将于4月9日临时停牌 当日10:30起复牌</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">37</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626159374574158374/" target="_blank">今日财经热点—2026年4月8日</a></div>            </div>
             </div>
         </div>
         <div class="card" data-category="AI">
             <h2>AI</h2>
             <div class="list-wrapper">
-            <div class="list-item-row">                <div class="list-item-bullet">1</div>                <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770214" target="_blank">高盛：AI的未来，要有光！</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">2</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2347473" target="_blank">【每日收评】创业板续创阶段新高！北证50午后飙涨近5%，算力产业链持续爆发</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">3</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2347533" target="_blank">【焦点复盘】市场延续极致“深强沪弱”，科技线一骑绝尘，光模块龙头市值剑指1万亿</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">4</div>                <div class="list-item-text"><a href="https://www.36kr.com/newsflashes/3770902281863945" target="_blank">仕佳光子：拟12.65亿元投建高速光芯片与器件开发及产业化项目</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">5</div>                <div class="list-item-text"><a href="https://juejin.cn/post/7628587639852630052" target="_blank">compose_skill 和 android skills，对 Android 项目提升巨大的专家 AI Skills</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">6</div>                <div class="list-item-text"><a href="https://juejin.cn/post/7628116434649088009" target="_blank">写给 Claude Code 初学者的使用技巧</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">7</div>                <div class="list-item-text"><a href="https://juejin.cn/post/7628861022926782490" target="_blank">邪修！让显示器支持AI、远程、手势三种控制方式</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">8</div>                <div class="list-item-text"><a href="https://juejin.cn/post/7628442107121598479" target="_blank">节省Token的8种方案</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">9</div>                <div class="list-item-text"><a href="https://juejin.cn/post/7628398734469546036" target="_blank">从程序员到AI工程师：距离有多远？附全套学习路线图</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">10</div>                <div class="list-item-text"><a href="https://juejin.cn/post/7612909583687221311" target="_blank">昨天还在发 Qwen3.5，今天技术负责人就被阿里云赶走了</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">11</div>                <div class="list-item-text"><a href="https://juejin.cn/post/7629374592915128383" target="_blank">Android CLI ，谷歌为 Android 开发者专研的 AI Agent，提速三倍</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">12</div>                <div class="list-item-text"><a href="https://juejin.cn/post/7628520551066124339" target="_blank">告别 Python 依赖！用 LangChainGo 打造高性能大模型应用，Go 程序员必看！</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">13</div>                <div class="list-item-text"><a href="https://juejin.cn/post/7628943925371191350" target="_blank">从零开始:前端转型AI agent直到就业第十二天-第十三天</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">14</div>                <div class="list-item-text"><a href="https://juejin.cn/post/7628489262721597478] [COMMENTS:1" target="_blank">大人工智能时代下前端界面全新开发模式的思考（二）</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">15</div>                <div class="list-item-text"><a href="https://juejin.cn/post/7628872509204054035" target="_blank">为什么 Claude 要求实名认证？</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">16</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626389762903163432/" target="_blank">Anthropic年化收入突破300亿美元 首超OpenAI</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">17</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626188515298132495/" target="_blank">GPT-6代号"Spud"完成预训练 预计4月14日发布</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">18</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626389762903163432/" target="_blank">Anthropic发布Claude Mythos Preview编程模型 启动Project Glasswing安全计划</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">19</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626381663966134793/" target="_blank">2026第三届AI算力产业大会4月9日在深圳开幕</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">20</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7625821490218271266/" target="_blank">OpenClaw智能体曝155个安全漏洞 企业应用风险凸显</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">21</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7621807724623315494/" target="_blank">2026最火游戏赛道预测!AI游戏、国风游戏领跑，错过再等一年</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">22</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626324698564936198/" target="_blank">2026年游戏圈热点盘点:AI重塑开发、大作扎堆，玩家社区脑洞不断</a></div>            </div>
             </div>
         </div>
         <div class="card" data-category="游戏">
             <h2>游戏</h2>
             <div class="list-wrapper">
-            <div class="list-item-row">                <div class="list-item-bullet">1</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626277288232960518/" target="_blank">游戏行业迎来密集新品上线周期，游戏ETF华夏(159869)涨5.56%</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">2</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7621807724623315494/" target="_blank">2026最火游戏赛道预测!AI游戏、国风游戏领跑，错过再等一年</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">3</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626324698564936198/" target="_blank">2026年游戏圈热点盘点:AI重塑开发、大作扎堆，玩家社区脑洞不断</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">4</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626263922215862794/" target="_blank">荣耀宣布全新WIN游戏本4月23日发布，2026年PC全产品线密集上新</a></div>            </div>
-            <div class="list-item-row">                <div class="list-item-bullet">5</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7621768977966039586/" target="_blank">2026 游戏全景观察:从爆款更迭到技术变革，玩家与行业的双向进化</a></div>            </div>
             </div>
         </div>
 
