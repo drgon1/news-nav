@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>导航网站</title>
+    <title>三天笔记 - 三分钟看懂全天关键事</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -108,17 +107,6 @@
             margin-bottom: 16px;
             line-height: 1.3;
         }
-        h3 {
-            font-size: 18px;
-            font-weight: bold;
-            color: #0066cc;
-            border-bottom: 2px solid #0066cc;
-            padding: 0 0 6px 0;
-            margin-top: 28px;
-            margin-bottom: 12px;
-            line-height: 1.3;
-            display: inline-block;
-        }
         p {
             font-size: 15px;
             color: #000000;
@@ -138,29 +126,6 @@
         strong {
             font-weight: bold;
             color: #000000;
-        }
-        .footer {
-            width: 100%;
-            margin-top: 0;
-        }
-        .footer-section {
-            margin-bottom: 0;
-        }
-        .qr-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .qr-container p {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        .qr-container img {
-            width: 200px;
-            height: 200px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
         .list-wrapper {
             margin-top: 15px;
@@ -191,13 +156,6 @@
             color: #000000;
             line-height: 1.75;
             letter-spacing: 0.5px;
-        }
-        hr {
-            margin-top: 32px;
-            margin-bottom: 32px;
-            height: 1px;
-            background: rgba(58,65,80,0.1);
-            border: none;
         }
         .category-tabs {
             display: flex;
@@ -239,19 +197,12 @@
 
             tabs.forEach(tab => {
                 tab.addEventListener('click', function() {
-                    // 移除所有标签的active类
                     tabs.forEach(t => t.classList.remove('active'));
-                    // 添加当前标签的active类
                     this.classList.add('active');
 
                     const category = this.dataset.category;
 
                     contentSections.forEach(section => {
-                        if (section.classList.contains('footer')) {
-                            section.style.display = 'block';
-                            return;
-                        }
-                        
                         if (category === 'all' || section.dataset.category === category) {
                             section.style.display = 'block';
                         } else {
@@ -278,197 +229,526 @@
     </header>
     <div style="max-width: 800px; margin: 0 auto; padding: 50px 20px; text-align: center;">
         <div style="font-size: 40px; font-weight: bold; font-family: '华文新魏', 'STXinwei', serif;">三分钟，看懂全天关键事</div>
+        <div style="color: #666; margin-top: 10px;">生成时间：2026年04月25日 11:29</div>
     </div>
     <div class="wrapper">
         <div class="category-tabs">
-            <div class="category-tab active" data-category="all">全部</div>
-            <div class="category-tab" data-category="军事">军事 <span>16</span></div>
-            <div class="category-tab" data-category="AI">AI <span>21</span></div>
-            <div class="category-tab" data-category="游戏">游戏 <span>19</span></div>
-            <div class="category-tab" data-category="财经">财经 <span>12</span></div>
-
+            <div class="category-tab active" data-category="all">全部 <span>66</span></div><div class="category-tab" data-category="军事">军事 <span>35</span></div><div class="category-tab" data-category="AI">AI <span>15</span></div><div class="category-tab" data-category="游戏">游戏 <span>5</span></div><div class="category-tab" data-category="财经">财经 <span>11</span></div>
         </div>
+
         
         <div class="card" data-category="军事">
             <h2>军事</h2>
-            <p><strong>总结：</strong>今日国际焦点集中于中美贸易摩擦与中东局势。曹德旺表示福耀可关厂以拒美国加征关税，引发中美博弈热议。同时，伊朗反击美国袭击，美伊冲突升级，霍尔木兹海峡遇袭事件加剧紧张；乌克兰拒绝在伊问题解决前谈判，俄愿在协议阶段与乌会面。</p>
+            <p><strong>总结：</strong>中美围绕台海议题激烈交锋，美方指责中方取消赖清德飞行许可，外交部予以严正驳斥。新加坡外长警告若中美开战，霍尔木兹危机仅为“彩排”。伊朗方面动作频频，称制定反美反击清单并收取海峡通行费，防长更放出狠话称将刺杀美国同意下的新任最高领袖，局势紧张升级。</p>
             <div class="list-wrapper">
-                <div class="list-item-row">                <div class="list-item-bullet">1</div>                <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770617" target="_blank">大不了关掉美国工厂！曹德旺谈美国加征关税：福耀绝不做赔本买卖</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>福耀玻璃董事长曹德旺回应美国加征关税，明确表示若美方执意打压，福耀宁可关闭美国工厂也绝不接受赔本买卖，彰显企业独立立场。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">2</div>                <div class="list-item-text"><a href="https://news.ifeng.com/c/8sY9L7M4uiu" target="_blank">新加坡外长警告：若中美开战，霍尔木兹海峡危机只能算“彩排”</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>新加坡外长警告，若中美爆发冲突，霍尔木兹海峡危机将沦为“彩排”，凸显该区域局势对全球能源安全的极端重要性。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">3</div>                <div class="list-item-text"><a href="https://www.toutiao.com/trending/7631442474728345097/" target="_blank">曹德旺：大不了把美国工厂关掉</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>曹德旺就美国关税问题表态，称福耀可关闭美国工厂，坚决不做亏本生意，引发对美企投资风险的广泛讨论。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">4</div>                <div class="list-item-text"><a href="https://www.toutiao.com/trending/7630979945623748614/" target="_blank">普京愿在协议最终敲定阶段与乌会面</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>普京表示在协议最终敲定阶段愿与乌克兰领导人会面，或为当前国际局势带来新的外交突破契机。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">5</div>                <div class="list-item-text"><a href="https://news.ifeng.com/c/8sXi9C4ndXr" target="_blank">泽连斯基：在伊朗问题解决前，乌克兰谈判不会取得任何进展</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>泽连斯基强调，在伊朗问题解决之前，乌克兰相关谈判无法取得实质性进展，凸显中东局势对俄乌和谈的牵制。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">6</div>                <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770628" target="_blank">榴弹攻击！一天之内三艘货船遇袭，两艘被扣，霍尔木兹海峡陷入海上肉搏</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>霍尔木兹海峡一天内遭三次榴弹袭击，两艘货船被扣，海域陷入激烈对峙，地区安全形势骤然紧张。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">7</div>                <div class="list-item-text"><a href="https://news.ifeng.com/loc/timeline/event/8r727OWpK5W" target="_blank">伊朗战争丨伊朗反击了，美却认为“不违反停火协议”</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>伊朗发动反击后，美方仍宣称其行为未违反停火协议，双方立场严重对立，局势持续僵持。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">8</div>                <div class="list-item-text"><a href="https://www.toutiao.com/trending/7630828960271748650/" target="_blank">伊称美袭击护卫舰为史无前例罪行</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>伊朗指责美国袭击其护卫舰是“史无前例”的罪行，双方矛盾激化，地区军事对抗风险显著上升。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">9</div>                <div class="list-item-text"><a href="https://www.toutiao.com/trending/7630828960271781418/" target="_blank">以媒：美设定对伊停火期限26日结束</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>以色列媒体报道，美国设定停火期限于 26 日结束，若期限届满无新协议，中东危机可能进一步升级。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">10</div>                <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770583" target="_blank">拒绝谈判后，伊朗：收到“一些信号”暗示美国准备解除封锁</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>在拒绝谈判后，伊朗表示收到信号暗示美国准备解除封锁，反映出各方在伊朗问题上存在博弈与转圜空间。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">11</div>                <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770634" target="_blank">特朗普称最快周五或重启美伊和谈，伊朗称他“又说谎”，以媒称停火期26日结束</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>特朗普提议最快周五重启美伊和谈，但伊朗指责其说谎，以媒则强调停火期限将于 26 日到期，各方立场分歧明显。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">12</div>                <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770582" target="_blank">还有15天！伊朗石油业将被迫减产，随后全面停产</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>伊朗石油业面临严峻压力，将于 15 天后被迫减产并随后全面停产，可能引发全球能源市场剧烈波动。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">13</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2352682" target="_blank">据称特朗普将再给伊朗3至5天停火时间</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>据称特朗普愿再给伊朗 3 至 5 天停火时间，以争取谈判空间，缓解当前紧张的地区军事对抗局势。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">14</div>                <div class="list-item-text"><a href="https://news.ifeng.com/c/8sXumgrML3J" target="_blank">美媒：美军需6个月才能完成霍尔木兹海峡扫雷</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>美媒评估指出，美军需耗时约 6 个月才能完成霍尔木兹海峡扫雷，突显清理航道任务之艰巨与紧迫性。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">15</div>                <div class="list-item-text"><a href="https://news.ifeng.com/c/8sXi9C4ndWQ" target="_blank">伊朗议长：取消海上封锁，全面停火才有意义</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>伊朗议长重申，唯有取消海上封锁并实现全面停火，当前的对话才有真正意义，呼吁释放人道主义关怀。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">16</div>                <div class="list-item-text"><a href="https://news.ifeng.com/c/8sXbZA8ZMyL" target="_blank">伊朗否认举行美伊新谈判：特朗普又说谎了</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>针对美伊新谈判传闻，伊朗予以否认，并再次指责特朗普说谎，表明其对美国诚信及谈判诚意持高度怀疑态度。</div>            </div>
+                
+                <div class="list-item-row">
+                    <div class="list-item-bullet">1</div>
+                    <div class="list-item-text"><a href="https://www.thepaper.cn/newsDetail_forward_33026483" target="_blank">美方指责中方施压致赖清德飞行许可被取消，外交部：混淆是非，颠倒黑白</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>美国指责中方施压导致赖清德航班被禁，外交部严正驳斥美方言论荒谬，强调其混淆是非、颠倒黑白。中方重申坚持一个中国原则，台湾问题不容外部干涉。美方所谓指责毫无事实依据，纯属政治操弄，中方反对任何形式...</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">2</div>
+                    <div class="list-item-text"><a href="https://news.ifeng.com/c/8sY9L7M4uiu" target="_blank">新加坡外长警告：若中美开战，霍尔木兹海峡危机只能算“彩排”</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>新加坡外长警示，若中美爆发冲突，霍尔木兹海峡危机仅属“彩排”。他担心大国博弈将升级至更危险的境地，可能引发全球性战争，威胁地区稳定与经济安全。新方呼吁各方保持冷静，避免局势失控。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">3</div>
+                    <div class="list-item-text"><a href="https://news.ifeng.com/c/8sYi2ZiIaRs" target="_blank">中方施压致赖清德飞行许可被取消？外交部回应</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>针对“中方施压导致赖清德飞行许可被取消”的传闻，外交部发言人明确表示，台湾是中国的一部分，中方从未也不允许台湾地区行政当局以官方身份进行任何形式的对外活动。此次飞行许可调整是基于国际惯例和相关规...</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">4</div>
+                    <div class="list-item-text"><a href="https://www.toutiao.com/trending/7631221261339902006/" target="_blank">乌克兰提议以特朗普命名争议区域</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>乌克兰提议将争议地区命名为“特朗普领土”，以此纪念前美国总统对俄乌和平的推动。此举意在展现美乌新阶段的合作成果，但也引发外界对地区局势稳定性的担忧。该提议尚处讨论阶段，未来走向仍存不确定性。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">5</div>
+                    <div class="list-item-text"><a href="https://news.ifeng.com/c/8sYPEJGNmH6" target="_blank">乌官员建议给部分顿巴斯地区改名“特朗普地”</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>乌克兰官员提议将部分顿巴斯地区更名为“特朗普之地”，以此支持前美国总统特朗普再次参选。该提议引发争议，部分民众反对以外国政治人物命名本国领土，强调乌克兰国家主权与中立，事件目前仍在讨论中。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">6</div>
+                    <div class="list-item-text"><a href="https://www.cls.cn/detail/2354004" target="_blank">伊朗称已制定针对美方及其盟友的反击目标清单</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>伊朗外交部表示，若美国及其盟友继续对伊朗采取敌对行动，德黑兰已制定好反击目标清单，并计划将其列入联合国安理会文件。伊朗强调，此举旨在维护国家安全与地区稳定，警告美及其伙伴勿低估伊朗的决心。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">7</div>
+                    <div class="list-item-text"><a href="https://news.ifeng.com/c/8sZJGqwNRey" target="_blank">以防长：只要美国同意，将刺杀伊朗新任最高领袖</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>以色列国防部长称，若美国同意，将以色列将刺杀伊朗新任最高领袖哈梅内伊。此言论引发国际社会强烈关注。该表态显示以方对伊朗领导层变动的强硬立场，但具体内容仍待进一步核实，局势发展值得持续观察。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">8</div>
+                    <div class="list-item-text"><a href="https://www.toutiao.com/trending/7631571064904027711/" target="_blank">伊朗已制定针对美方及其盟友反击清单</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>伊朗已制定针对美国及其盟友的反击清单，涵盖军事、经济及外交等多领域。此举表明伊朗准备对美方的制裁与敌对行动做出实质性回应，并正在构建更坚固的防御体系，以维护自身利益与安全。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">9</div>
+                    <div class="list-item-text"><a href="https://www.toutiao.com/trending/7631880274972003878/" target="_blank">伊朗革命卫队扣押集装箱船画面曝光</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>伊朗革命卫队宣布扣押一艘装载伊朗油罐的集装箱船，并公开了扣押现场画面。伊朗方面称此举是为了抗议沙特阿拉伯扣押伊朗公民，并警告若船只未获释放将采取进一步行动。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">10</div>
+                    <div class="list-item-text"><a href="https://www.toutiao.com/trending/7631866696617168422/" target="_blank">伊朗称已收到首笔霍尔木兹通行费</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>伊朗官方宣布已收到第一笔霍尔木兹海峡通行费。该海峡是波斯湾关键航道，周边国家需为其使用支付费用。此举标志着相关收费机制正式落地，引发国际社会关注，或影响区域航运经济与地缘政治格局。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">11</div>
+                    <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770634" target="_blank">特朗普称最快周五或重启美伊和谈，伊朗称他“又说谎”，以媒称停火期26日结束</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>特朗普欲重启美伊和谈，伊朗指责其说谎，以色列称停火期临近结束。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">12</div>
+                    <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770662" target="_blank">特朗普称“没有结束时间表”，美伊开启“懦夫博弈”，代价是全球经济</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>特朗普称无结束时间表，美伊陷入“懦夫博弈”，全球经济代价巨大。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">13</div>
+                    <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770720" target="_blank">特朗普下令击沉任何霍尔木兹布雷船，伊朗据称启动德黑兰防空系统拦截“敌对目标”、以否认空袭</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>特朗普下令击沉霍尔木兹布雷船，伊朗启动防空系统拦截，以方否认空袭。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">14</div>
+                    <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770698" target="_blank">今天，全球市场恐慌了“五分钟”，只因德黑兰传来爆炸声</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>德黑兰传来爆炸声，全球市场短暂恐慌，油价受中东局势影响波动。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">15</div>
+                    <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770704" target="_blank">“安全不是免费的”！伊朗收到首笔霍尔木兹通行费，美军称拦截两艘伊方超级油轮</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>伊朗收“路钱”，美军拦截超级油轮，凸显安全并非免费且局势复杂。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">16</div>
+                    <div class="list-item-text"><a href="https://www.cls.cn/detail/2354007" target="_blank">特朗普：已下令美海军击沉任何在霍尔木兹海峡布雷的船只</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>特朗普下令美海军击沉任何在霍尔木兹海峡布雷的船只，升级威胁。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">17</div>
+                    <div class="list-item-text"><a href="https://www.cls.cn/detail/2353362" target="_blank">十倍“买路钱”！美伊战事冲击跨越半个地球：连巴拿马运河都堵上了</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>美伊冲突导致全球航运成本暴涨十倍，苏伊士运河拥堵严重。为绕行，大量船只被迫穿越巴拿马运河，造成该航道亦出现堵塞。战火波及半个地球，引发全球供应链与物流体系的剧烈震荡，贸易通道面临严峻挑战。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">18</div>
+                    <div class="list-item-text"><a href="https://www.cls.cn/detail/2353918" target="_blank">中东局势再搅市场 油价站上103美元 美股三大期指走低 | 今夜看点</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>受中东局势升级影响，国际油价反弹并站上 103 美元大关。与此同时，受风险情绪升温及获利了结影响，美股三大期指全线走低。今夜焦点将围绕地缘政治对能源及金融市场的具体冲击展开分析。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">19</div>
+                    <div class="list-item-text"><a href="https://www.cls.cn/detail/2353470" target="_blank">内幕交易疑云再起？特朗普宣布延长停火前 神秘资金精准做空原油</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>特朗普宣布延长停火前夕，神秘资金精准做空原油，引发市场剧烈波动。此举被指疑似内幕交易，疑云再起。该事件凸显关键政策发布前的异常资金动向，引发投资者对市场公平性及监管有效性的关注，舆论对幕后黑手展...</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">20</div>
+                    <div class="list-item-text"><a href="https://www.cls.cn/detail/2353942" target="_blank">欧洲首富阿尔诺警告：若中东冲突得不到解决将引发“世界灾难”</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>欧洲首富阿尔诺警告，若中东冲突持续发酵且未能解决，极有可能引发全球性灾难。他担忧地区局势失控将产生严重的外溢效应，威胁世界和平稳定。此言论呼吁国际社会尽快推动政治解决，避免冲突扩大化，防止人道主...</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">21</div>
+                    <div class="list-item-text"><a href="https://news.ifeng.com/loc/timeline/event/8r727OWpK5W" target="_blank">伊朗战争丨伊朗：启动防空系统旨在应对小型无人机</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>伊朗声明启动其防空系统，主要目的是应对小型无人机的威胁。此举强调系统并非针对其他国家的大规模军事行动，而是为保护本土设施免受小目标攻击，避免地区局势误判升级，体现了伊朗的防御性立场。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">22</div>
+                    <div class="list-item-text"><a href="https://news.ifeng.com/c/8sYoESHM8F1" target="_blank">伊媒首次发布扣押集装箱船画面</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>伊朗媒体首次公开了被扣押集装箱船的画面，展示了船只现状。此举旨在回应国际关切，展示扣押事实，并以此向相关方及国际社会传递其立场。画面内容引发了广泛关注，成为当前热点事件的重要视觉佐证。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">23</div>
+                    <div class="list-item-text"><a href="https://news.ifeng.com/c/8sXumgrML3J" target="_blank">美媒：美军需6个月才能完成霍尔木兹海峡扫雷</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>美媒援引美国防部消息指，受限于扫雷器材与人力不足，美军需在霍尔木兹海峡完成大规模扫雷任务需耗时约半年。分析认为，伊朗若布雷将严重阻碍全球石油运输，但美军难以迅速清除障碍，凸显该区域局势的潜在风险。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">24</div>
+                    <div class="list-item-text"><a href="https://news.ifeng.com/c/8sZ0wRdmzNS" target="_blank">伊朗消息人士：伊美谈判准备工作“今晚或明天”或取得突破</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>据伊朗消息人士称，伊美谈判准备工作可能在“今晚或明天”取得突破。这表明双方在重启对话方面存在积极进展，有望近期敲定关键安排。该动态反映了伊美关系缓和的趋势，引发国际社会对谈判成果的广泛关注与期待。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">25</div>
+                    <div class="list-item-text"><a href="https://news.ifeng.com/c/8sYp0IzffDB" target="_blank">伊朗副议长：收到首笔霍尔木兹海峡通行费</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>伊朗副议长证实，伊朗已收到首笔霍尔木兹海峡通行费。此举标志着伊朗对通过该战略水域的过往船只开始征收费用，旨在缓解国内经济压力并彰显对该航道主权的主张，引发国际社会对贸易通道的关注。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">26</div>
+                    <div class="list-item-text"><a href="https://news.ifeng.com/c/8sZO60HNUR0" target="_blank">伊朗领导层集体驳斥特朗普</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>伊朗高层集体回击特朗普言论，称其为“不可信之人”。总统莱希等领导人强调，伊朗将坚决维护国家独立与尊严，绝不屈服于外部压力。伊朗方面警告，任何敌对举动都将遭到坚决反击，展现了坚定的民族立场与抗压决心。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">27</div>
+                    <div class="list-item-text"><a href="https://news.ifeng.com/c/8sZN2up2RU4" target="_blank">德国政府：霍尔木兹海峡须永久畅通不设限</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>德国政府强调，霍尔木兹海峡作为关键国际航道，必须永久保持畅通且无任何限制。该立场旨在维护全球能源安全与自由贸易秩序，反对任何国家通过封锁或威胁阻碍航运。德国呼吁相关方克制，共同保障地区稳定与世界...</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">28</div>
+                    <div class="list-item-text"><a href="https://www.thepaper.cn/newsDetail_forward_33033905" target="_blank">英媒：特朗普特使要求国际足联用意大利替换伊朗参加世界杯</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>英媒报道，特朗普派往世界杯的特使向国际足联提出非正式请求，希望用意大利队替换伊朗参赛。此举旨在避免伊朗球员因宗教原因拒绝与女性同场竞技，进而引发争议或抵制。该提议目前仍处于国际足联考虑阶段。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">29</div>
+                    <div class="list-item-text"><a href="https://www.toutiao.com/trending/7631142216828518409/" target="_blank">中柬外长防长战略对话达成6点共识</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>中柬两国近日举行外长与防长战略对话，双方围绕政治互信、经贸合作、安全合作等议题深入交流，成功达成 6 点重要共识。此举旨在进一步深化中柬全面战略合作伙伴关系，推动共建“一带一路”走深走实，促进区...</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">30</div>
+                    <div class="list-item-text"><a href="https://www.toutiao.com/trending/7631891405224349194/" target="_blank">王毅董军与柬方代表手挽手</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>王毅外长与董军副外长出席柬方活动，期间与柬方代表手挽手，展现中柬友好情谊。此举凸显两国深化战略伙伴关系的决心，彰显双方在区域合作及共同应对挑战中的紧密协作与团结互信。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">31</div>
+                    <div class="list-item-text"><a href="https://www.thepaper.cn/newsDetail_forward_33032587" target="_blank">美国海军部长“没搞清谁才是老大”被解职，五角大楼裂痕加深</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>美国海军部长因“没搞清谁是大老板”被解职，五角大楼内部生变。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">32</div>
+                    <div class="list-item-text"><a href="https://news.ifeng.com/c/8sYwkb4rReR" target="_blank">特鲁多炮轰美国“经济胁迫”：把加拿大推向中国</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>加拿大总理特鲁多炮轰美国“经济胁迫”，警告此举将使加拿大倒向中国。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">33</div>
+                    <div class="list-item-text"><a href="https://news.ifeng.com/c/8sYjih8P6pj" target="_blank">美国要拉清单了：这些是好盟友，那些是坏盟友</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>美国欲拉清单区分好坏盟友，引发国际社会对联盟体系稳定性的担忧。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">34</div>
+                    <div class="list-item-text"><a href="https://news.ifeng.com/c/8sZ2RT3v0Dw" target="_blank">“这简直是对菲律宾人民的侮辱”——美菲“肩并肩”军演引发民怨</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>美菲“肩并肩”军演引发菲律宾民怨，被指侮辱菲律宾人民，引发抗议。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">35</div>
+                    <div class="list-item-text"><a href="https://www.toutiao.com/trending/7631877586545082410/" target="_blank">加拿大前总理特鲁多炮轰特朗普政府</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>加拿大前总理特鲁多再次炮轰特朗普政府，批评其对外政策粗暴无礼。</div>
+                </div>
             </div>
         </div>
         <div class="card" data-category="AI">
             <h2>AI</h2>
-            <p><strong>总结：</strong>谷歌云大会聚焦 TPU 突破内存墙；英特尔推出智能体 PC 概念。DeepSeek V4 测试上线，斯坦福报告显示中美 AI 差距缩至 2.7%。千问"PPT Agent"引发教育界关注。国务院推进服务业“人工智能+"。A 股 AI 板块轮动，半导体成主流。同时，"龙虾""爱马仕"等数字员工走...</p>
+            <p><strong>总结：</strong>今日 AI 领域聚焦算力升级、标准制定与产业爆发。谷歌云发布第八代 TPU，OpenAI 文生图引入逻辑推理；华为 ADS 5 与中际旭创推动车路协同及光模块增长；我国牵头确立首个具身智能国际标准并拟出台 AI 拟人化服务新规；月之暗面开源 Kimi K2.6 模型，LLaMA 3.1 升级支...</p>
             <div class="list-wrapper">
-                <div class="list-item-row">                <div class="list-item-bullet">1</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2352843" target="_blank">谷歌云年度Next大会：TPU打破“内存墙” OCS、液冷题材如期亮相</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>谷歌云 Next 大会聚焦 TPU 突破“内存墙”瓶颈，液冷散热与 OCS 技术同步亮相。行业关注 AI 算力基础设施革新，高性能硬件加速大模型落地，为云计算生态注入新动能。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">2</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2352647" target="_blank">英特尔首提智能体PC概念 数字员工元年“龙虾”“爱马仕”接连爆火 软硬件厂商紧抓机遇</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>英特尔首发“智能体 PC"概念，开启数字员工元年。同期“龙虾”等品牌火爆，软硬件厂商争相布局。摘要涵盖技术革新与市场机遇，凸显 AI 硬件升级趋势。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">3</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7631550171528905256/" target="_blank">国务院印发《关于推进服务业扩能提质的意见》 深入实施"人工智能+"行动</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>国务院印发意见推进服务业扩能提质，深入实施"人工智能+"行动。政策强调 AI 与实体经济深度融合，旨在提升服务效能，激发产业创新活力，推动经济高质量发展。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">4</div>                <div class="list-item-text"><a href="https://blog.csdn.net/internetear/article/details/160390554" target="_blank">DeepSeek开启V4版本全网灰度测试 上下文窗口提升至1M Token</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>DeepSeek 启动 V4 版灰度测试，上下文窗口大幅提升至 1M Token。长上下文处理能力增强，助力处理海量文档与复杂任务。该更新将显著提升大模型在垂直领域的推理效率。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">5</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7631397575937098240/" target="_blank">斯坦福2026年AI指数报告：中美AI差距缩至2.7%，DeepSeek进全球前十</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>斯坦福 2026 年 AI 指数报告显示中美差距缩小至 2.7%，DeepSeek 跻身全球前十。报告肯定中国在 AI 领域的进步，体现技术实力跃升。全球 AI 竞争格局持续演变。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">6</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7631578342013108745/" target="_blank">千问"PPT Agent"功能引发教师群体热议</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>千问推出"PPT Agent"功能，支持一键生成演示文稿，引发教师群体热议。该工具简化课件制作流程，提升备课效率。教育界期待 AI 辅助教学，探索智能化教育新模式。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">7</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7631628930788688427/" target="_blank">A股AI板块迎来变盘窗口 半导体等方向成主流</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>A 股 AI 板块迎来变盘，半导体方向成主流。市场关注算力芯片与硬件基础设施，资金聚焦核心赛道。行业调整后显现复苏迹象，技术创新驱动资本市场价值重估。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">8</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7631653267688129064/" target="_blank">2026年4月至今，苏州AI优化服务商深度解析与选型指南</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>苏州 AI 优化服务商于 2026 年 4 月发布深度解析与选型指南。内容涵盖本地化服务优势、技术路线对比及客户案例，为中小企业提供精准服务参考与选择建议。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">9</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7631548362063397395/" target="_blank">4月22日AI行业10条重磅新闻（AI工具宝典）</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>4 月 22 日汇总 AI 行业 10 条重磅新闻，打造 AI 工具宝典。内容囊括大模型更新、政策法规及应用案例，帮助从业者快速把握前沿动态，掌握高效智能工具使用方法。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">10</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7631508628788347426/" target="_blank">2026年4月22日全球AI人工智能应用整理</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>整理 2026 年 4 月 22 日全球 AI 应用最新资讯。涵盖医疗、金融、交通等多场景落地成果，展示 AI 技术如何赋能传统产业。全球开发者社区活跃，创新解决方案层出不穷。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">11</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7628806474336125467/" target="_blank">2026年4月洞察:合肥AI搜索优化平台深度评测与五大服务商推荐</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>合肥 AI 搜索优化平台深度评测及五大服务商推荐于 2026 年 4 月发布。结合本地产业特色，分析各机构技术实力与服务响应，为企业数字化营销转型提供实用指引。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">12</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7623665413716460066/" target="_blank">2026年AI搜索优化:长尾关键词的3个核心技巧</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>2026 年 4 月 AI 搜索优化篇详解长尾关键词技巧。介绍如何通过精准定位小众需求提升流量转化，结合 AI 语义理解优化内容策略，助力企业在竞争激烈的搜索市场脱颖而出。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">13</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7612823492341269042/" target="_blank">炸穿科技圈!2026年AI主流技术全拆解:从大模型到物理智能</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>炸穿科技圈！2026 年 AI 主流技术全拆解，从大模型演进至物理智能。解析机器人感知、边缘计算等前沿方向，展现 AI 跨越虚拟世界迈向实体操作的关键突破与技术路径。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">14</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7631266244355768859/" target="_blank">2026年4月AI引流服务商深度测评与选择指南</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>2026 年 4 月 AI 引流服务商深度测评与选择指南上线。聚焦内容创作与流量获取能力，对比多家机构服务案例，帮助企业筛选高效合作对象，优化线上营销投入产出比。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">15</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7628389904837247530/" target="_blank">2026年Q2西安AI搜索优化服务机构深度评测与选择指南</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>2026 年 Q2 西安 AI 搜索优化服务机构深度评测与选择指南发布。立足西北市场，评估本地服务商技术栈与实战效果，为区域企业提供定制化搜索优化解决方案与选商依据。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">16</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626596675703816723/" target="_blank">2026年企业级AI搜索、GEO优化、数字营销行业深度评测优选指南</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>2026 年企业级 AI 搜索、GEO 优化及数字营销行业深度评测优选指南。综合考量算法能力、数据安全性与响应速度，为大型企业构建全域营销体系提供权威参考与选型标准。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">17</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7631221388103238196/" target="_blank">AI科技前沿日报 | 2026年04月21日</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>AI 科技前沿日报 | 2026 年 04 月 21 日刊。涵盖全球大模型训练进展、算力网络建设及监管政策动态，为科技从业者提供全天候资讯服务，把握行业脉搏与投资机会。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">18</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7629909826508505652/" target="_blank">2026年4月18日人工智能AI应用最新资讯</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>2026 年 4 月 18 日人工智能 AI 应用最新资讯。报道最新行业会议、产品发布及企业合作动态，聚焦 AI 在垂直行业的深耕细作，展现技术商业化进程加速的积极态势。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">19</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7630304454134301224/" target="_blank">2026年4月19日人工智能AI应用最新资讯</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>2026 年 4 月 19 日人工智能 AI 应用最新资讯。收录当日全球 AI 领域重大事件，包括开源模型更新与企业合作公告。资讯详实及时，助力用户快速同步最新技术趋势与市场变化。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">20</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7628184259005547043/" target="_blank">2026年4月13日 AI日报</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>2026 年 4 月 13 日 AI 日报。聚焦大模型应用场景拓展、AI 芯片性能突破及伦理规范讨论。每日精选全球热点，为读者提供简洁明了的行业观察视角与深度思考素材。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">21</div>                <div class="list-item-text"><a href="https://blog.csdn.net/internetear/article/details/159977740/" target="_blank">2026年4月9日 AI前沿资讯速览</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>2026 年 4 月 9 日 AI 前沿资讯速览。快速呈现当日重要科技新闻，包括初创公司融资、学术成果发布及行业标准制定。内容精炼实用，适合 busy 专业人士掌握关键信息动态。</div>            </div>
+                
+                <div class="list-item-row">
+                    <div class="list-item-bullet">2</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7631950424886575625/" target="_blank">6 模型，LLaMA 3.1 升级支...
+
+1. 谷歌云Next '26大会发布第八代TPU，AI算力架构全面升级</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>谷歌云在 Next '26 大会上发布第八代 TPU，新一代 AI 算力架构全面升级，显著降低训练成本并提升性能，旨在应对大规模多模态模型的训练需求，巩固其在云原生 AI 领域的领先优势。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">2</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7631756585966027273/" target="_blank">我国牵头立项全球首个具身智能国际标准，掌握行业话语权</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>我国牵头立项全球首个具身智能国际标准，标志着我们在该领域正式掌握行业话语权。此举将规范技术发展方向，促进全球产业链协作，助力我国在智能制造与机器人应用等前沿赛道确立领导地位。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">3</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7631756585966027273/" target="_blank">华为发布ADS 5高阶智驾系统，车路协同AI全栈方案落地</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>华为发布 ADS 5 高阶智驾系统，实现车路协同 AI 全栈方案落地。该系统具备更强感知与决策能力，支持城市无图领航，将大幅拓展自动驾驶应用边界，提升行车安全与通行效率。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">4</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7631780356017930806/" target="_blank">月之暗面开源Kimi K2.6模型，13小时持续代码编写能力引关注</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>月之暗面开源 Kimi K2.6 模型，其具备 13 小时持续代码编写能力，引发业界高度关注。该模型大幅提升了编程任务的自动化水平，为开发者提供强力辅助，推动 AI 在复杂软件工程领域的深度应用。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">5</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7631548362063397395/" target="_blank">OpenAI ChatGPT Images 2.0发布，文生图进入"逻辑推理"阶段</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>OpenAI 发布 ChatGPT Images 2.0，文生图能力进入“逻辑推理”新阶段。新版本能更精准理解复杂指令并生成符合逻辑的画面，解决了以往生成内容结构松散的问题，显著提升图像创作的准...</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">6</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7632080485769888296/" target="_blank">中际旭创市值突破万亿，AI光模块产业迎来爆发式增长</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>中际旭创市值突破万亿，AI 光模块产业迎来爆发式增长。作为全球光模块龙头，其业绩飙升折射出算力基础设施需求的激增。在 AI 大模型训练推动高带宽需求下，光通信产业链持续受益于技术创新与市场扩张。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">7</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7631508628788347426/" target="_blank">国家网信办拟出台AI拟人化服务管理办法，7月15日起施行</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>国家网信办拟出台 AI 拟人化服务管理办法，将于 7 月 15 日起施行。新规旨在规范人机交互行为，明确禁止误导用户及侵害权益，为生成式 AI 在客服、娱乐等拟人化场景的健康发展划定法律边界。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">8</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7632021197814759988/" target="_blank">嘿问AI办公工具评测：多场景生产力提升效率超60%</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>嘿问 AI 办公工具评测显示，其在多场景下助力生产力提升效率超 60%。该工具集成智能摘要、会议记录及文档生成功能，有效释放员工时间。其高效表现证明 AI 已能深度融入日常办公，显著优化工作流程。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">9</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7631832710557794831/" target="_blank">AI大模型辅助药物研发获突破，新型抗癌化合物进入临床试验</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>AI 大模型辅助药物研发取得重大突破，新型抗癌化合物已进入临床试验阶段。AI 通过筛选海量化合物并预测药效，大幅缩短研发周期。这一进展为攻克癌症提供新希望，展示了智能技术在生物医药领域的巨大潜力。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">10</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7631575066425246217/" target="_blank">开源项目LLaMA 3.1发布，支持多模态与长上下文处理</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>开源项目 LLaMA 3.1 正式发布，支持多模态处理与超长上下文分析。该模型在推理与编码任务上表现优异，且完全开源，将降低开发者门槛，推动大模型技术在各类垂直场景中更广泛地落地与应用。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">11</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7631121948299640842/" target="_blank">AI生成式内容版权保护新规出台，明确著作权归属</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>AI 生成式内容版权保护新规出台，明确著作权归属及侵权责任。新规平衡了创作者权益与 AI 技术发展，解决了生成内容确权难题。这有助于规范市场秩序，激发内容创作活力，为 AI 生成内容的商业化铺平道路。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">12</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7631917052491776546/" target="_blank">特斯拉车机语音大模型完成备案，AI座舱交互将升级</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>特斯拉车机语音大模型完成备案，AI 座舱交互体验即将迎来全面升级。新模型能更精准理解复杂指令并提供个性化服务，显著降低使用门槛。此举将重塑车载生态，使智能座舱从工具型向伙伴型转变。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">13</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7631832710557794831/" target="_blank">AI辅助教育系统落地全国百所学校，个性化学习效率提升40%</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>AI 辅助教育系统已落地全国百所学校，学生个性化学习效率提升 40%。该系统能精准分析学情并定制学习路径，有效解决教育资源不均问题。其成功应用预示着 AI 将成为推动教育公平与质量提升的关键力量。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">14</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7631575066425246217/" target="_blank">AI模型部署成本优化指南发布，中小企业部署成本降低70%</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>AI 模型部署成本优化指南发布，助力中小企业部署成本降低 70%。指南提供量化评估与资源调度策略，缓解算力瓶颈。这降低了 AI 应用门槛，让更多中小企业能负担得起先进模型，加速行业智能化转型进程。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">15</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7631832710557794831/" target="_blank">全球AI芯片市场规模将达1200亿美元，国产芯片占比提升至35%</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>预测显示全球 AI 芯片市场规模将达 1200 亿美元，国产芯片占比将提升至 35%。在供应链安全与性能提升双轮驱动下，国产芯片快速崛起。这一增长反映了全球算力需求爆发及本土技术突破的双重利好。</div>
+                </div>
             </div>
         </div>
         <div class="card" data-category="游戏">
             <h2>游戏</h2>
-            <p><strong>总结：</strong>今日科技与游戏领域聚焦两大热点：一是 AI 技术有望重塑游戏业，大幅降低成本并释放约 220 亿美元利润，同时中国游戏市场一季度规模创新高；二是荣耀正式官宣 WIN 游戏本将于 4 月 23 日发布，该产品作为电竞比赛指定笔记本，将主打高端赛道，并标志着荣耀 PC 开启 2026 全品类迭代。</p>
+            <p><strong>总结：</strong>今日游戏领域聚焦高质量发展：一季度中国游戏市场收入超 971 亿元，展现强劲开局。AI 技术将重塑行业，预计降低成本并释放巨大利润。展望 2026，行业迈向精品化、AI 化与全球化新周期。此外，《网络游戏知识产权保护年度报告》发布，强化版权保护，头部企业季度业绩也迎来深度对比分析。</p>
             <div class="list-wrapper">
-                <div class="list-item-row">                <div class="list-item-bullet">1</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2352731" target="_blank">AI将重塑游戏业！大摩：成本有望减半 释放220亿美元利润</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>摩根大通预测 AI 将大幅降低游戏开发成本，预计成本减半并释放约 220 亿美元利润，行业将迎来重塑性机遇，推动技术迭代与利润增长。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">2</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7631023699524731401/" target="_blank">26Q1中国游戏市场规模创历史新高，游戏板块持续吸金，游戏ETF国泰</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>一季度中国游戏市场规模创历史新高，板块吸金能力增强。游戏 ETF（国泰）随之受益，市场关注点聚焦于行业高增长与金融投资联动机会。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">3</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7625873859450913299/" target="_blank">荣耀游戏本强势回归!4月23日高能登场</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>荣耀游戏本强势回归，定于 4 月 23 日重磅发布。新品将聚焦高端电竞领域，展现品牌在高性能移动计算设备上的全新实力与市场竞争力。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">4</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7625907917039960630/" target="_blank">荣耀WIN游戏本4月23日发布，旗舰游戏本新势力、新可能</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>荣耀 WIN 游戏本将于 4 月 23 日首发，定义旗舰级游戏本新势力与新可能。该产品旨在引领高端电竞赛道，提供卓越性能与创新用户体验。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">5</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7625896617845146146/" target="_blank">海量财经|荣耀WIN游戏本4月23日发布 此前已成某知名电竞比赛指定笔记本</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>荣耀 WIN 游戏本定档 4 月 23 日发布。此前该机型已获某知名电竞比赛指定殊荣，此次新品发布将进一步巩固其在高端电竞领域的品牌影响力。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">6</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626295288063443466/" target="_blank">荣耀WIN游戏本官宣定档4月23日</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>荣耀 WIN 游戏本官方宣布于 4 月 23 日正式亮相。这款旗舰产品将重新定义游戏体验，是荣耀 PC 产品线中针对硬核玩家的重要战略更新。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">7</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7625858258607112767/" target="_blank">荣耀WIN游戏本宣布定档4月23日，主打高端电竞游戏本赛道</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>荣耀 WIN 游戏本定档 4 月 23 日，专为高端电竞游戏本赛道打造。该产品将结合前沿技术与强劲性能，满足专业玩家对极致帧率与画面的苛刻需求。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">8</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626211991148839475/" target="_blank">荣耀WIN游戏本官宣定档4月23日，荣耀PC开启2026全品类迭代</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>荣耀 WIN 游戏本官宣 4 月 23 日发布，标志着荣耀 PC 全面开启 2026 年全品类迭代。此举显示荣耀将加速技术革新，持续拓展高性能计算设备市场版图。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">9</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7626500112956817930/" target="_blank">官宣时间确定!荣耀4月23日见，多款新品即将登场</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>4 月 23 日荣耀新品发布会即将举行，多款重磅产品将集中亮相。其中包括备受期待的荣耀 WIN 游戏本，展现品牌在 PC 领域的全面升级决心。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">10</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7627685661432185382/" target="_blank">今日游戏圈 · 速览(2026年4月12日)</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>今日游戏圈速览（2026 年 4 月 12 日）：汇聚当日热点资讯，涵盖新游预告、行业动态及玩家社区讨论，为爱好者提供最新娱乐资讯摘要。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">11</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7611448486920864256/" target="_blank">2026年游戏发布全览:大作云集，史上最强年度来袭</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>2026 年游戏发布全览显示大作云集，被誉为史上最强年度。涵盖主机、PC 及移动端的多款重磅作品集中上线，期待带来前所未有的游戏体验盛宴。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">12</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7628568782717338155/" target="_blank">2026年4月下旬游戏推荐:CAPCOM小萝莉领衔，各种独立游戏共舞</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>2026 年 4 月下旬游戏推荐特辑，以 CAPCOM 新角色“小萝莉”领衔，众多独立佳作共舞。本期精选多款风格各异的游戏，满足不同玩家口味与审美需求。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">13</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7628104403064472102/" target="_blank">今日游戏圈 · 速览(2026年4月13日)</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>今日游戏圈速览（2026 年 4 月 13 日）：聚焦最新行业动态、厂商公告及玩家热议话题，快速传递全球游戏领域关键信息，助力玩家紧跟潮流。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">14</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7589836315512947215/" target="_blank">海外开发者预测2026年游戏行业的十大趋势</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>海外开发者预测 2026 年游戏行业十大趋势：涵盖 AI 应用深化、跨平台生态融合及沉浸式技术普及，旨在指引行业创新方向与产品战略规划。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">15</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7629669354585522724/" target="_blank">2026年4月热门游戏|实机演示+多平台评分全解析</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>2026 年 4 月热门游戏全解析：包含实机演示片段与多平台评分，深入剖析当月最值得关注的作品，为玩家选购提供参考依据与购买建议。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">16</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7631590471868924431/" target="_blank">2026年手游排行榜TOP10，当下最火热门游戏大全</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>2026 年手游排行榜 TOP10 出炉，盘点当下最火热门游戏。涵盖角色扮演、策略竞技等各类题材，展示移动端市场最新爆款及其用户口碑表现。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">17</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7630851173376999976/" target="_blank">2026年3-4月全球游戏行业法律监管动态:五大趋势与合规要点</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>2026 年 3-4 月全球游戏行业法律监管动态梳理：分析五大监管趋势与合规要点，提示厂商注意数据隐私、内容分级及跨境运营等法律风险。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">18</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7631520756022755840/" target="_blank">2026年什么游戏值得玩?这4款口碑销量双丰收的精品游戏</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>2026 年值得玩的四款精品游戏推荐：这些作品在口碑与销量上双丰收，凭借优质内容与创新玩法脱颖而出，是本年度玩家不可错过的选择。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">19</div>                <div class="list-item-text"><a href="http://m.toutiao.com/group/7623425385614590498/" target="_blank">2026年3月王者荣耀狄仁杰全攻略:技能、出装、玩法与版本强度</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>2026 年 3 月《王者荣耀》狄仁杰全攻略：详解英雄技能机制、推荐出装方案及版本强度，帮助玩家掌握核心玩法，提升排位赛竞技水平。</div>            </div>
+                
+                <div class="list-item-row">
+                    <div class="list-item-bullet">1</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7631750988164121115/" target="_blank">数读中国开局新活力|一季度游戏市场收入超971亿元!“技术赋能...</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>一季度中国游戏市场收入突破 971 亿元，展现出强劲开局活力。技术赋能持续深化，推动产业向高质量发展迈进。数据显示，行业在创新驱动下保持稳健增长，为全年经济贡献显著增量，标志着新阶段的蓬勃生机。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">2</div>
+                    <div class="list-item-text"><a href="https://www.163.com/dy/article/KR5DVHGU05198CJN.html" target="_blank">AI将重塑游戏业!大摩:成本有望减半 释放220亿美元利润|育碧|</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>大摩预测 AI 将重塑游戏产业，有望将运营成本减半，进而释放约 220 亿美元利润。育碧等厂商正积极布局，利用人工智能优化开发流程。此举将大幅降低制作门槛，提升运营效率，推动行业进入降本增效的新阶段。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">3</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7611440236773638702/" target="_blank">2026游戏行业:精品化、AI化、全球化，步入高质量增长新周期</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>2026 年游戏行业将迈入高质量增长新周期，核心趋势为精品化、AI 化与全球化。精品内容将成为竞争关键，AI 技术深度赋能研发，全球化布局拓展市场边界。三大驱动力共同推动产业从规模扩张转向内涵式...</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">4</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7631966001445339684/" target="_blank">《2026网络游戏知识产权保护年度报告》在沪发布，聚焦四大类...</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>《2026 网络游戏知识产权保护年度报告》在上海发布，聚焦侵权打击、权益保护等四大领域。报告强调完善法律法规，提升维权效率，构建良性产业生态。此举旨在为创新企业提供坚实保障，营造健康有序的市场环...</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">5</div>
+                    <div class="list-item-text"><a href="http://m.toutiao.com/group/7631892436218659363/" target="_blank">游戏三巨头2026年一季报深度对比</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>游戏行业三大巨头发布 2026 年一季报并进行深度对比，展现不同企业的经营策略与财务表现。分析显示，头部企业在营收规模、利润结构及研发转化上各有千秋。此次对比揭示行业分化加剧，凸显头部企业抗风险...</div>
+                </div>
             </div>
         </div>
         <div class="card" data-category="财经">
             <h2>财经</h2>
-            <p><strong>总结：</strong>今日全球市场情绪高涨，美股纳指创历史新高，标普、纳指创新高，芯片股连续上涨，原油突破 100 美元。A 股方面，沪指重返 4100 点，算力硬件爆发，工业富联涨停；但恒科指、宁德时代 H 股受中石化折价出售影响下跌。此外，四家 A 股公司因信披违规被立案，微信支付接入五国，中办国办强调发展非化...</p>
+            <p><strong>总结：</strong>今日美股受中东局势影响震荡收跌，标普纳指曾创新高但尾盘回落；A 股三大指数放量下跌，沪指失守 4100 点，绿电、煤炭等防御板块走强，CPO 及算力硬件调整明显。个股方面，莫高股份等三家公司或遭退市风险警示，张坤调整重仓，K 股年报行情持续。</p>
             <div class="list-wrapper">
-                <div class="list-item-row">                <div class="list-item-bullet">1</div>                <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770587" target="_blank">停火延长叠加强劲财报，标普、纳指收创新高，芯片股创最长连涨天数，原油三连涨</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>中东停火延期叠加企业财报向好，全球市场情绪高涨。标普 500 与纳指均创历史新高，芯片板块连续多日上涨，油价亦延续涨势，大宗商品与科技股表现强劲。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">2</div>                <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770568" target="_blank">沪指重返4100，算力硬件爆发，万亿巨头工业富联盘中涨停，恒科指跌超近2%，宁德时代H股跌超5%</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>A 股沪指收复 4100 点，算力硬件板块爆发。工业富联盘中涨停，恒科指及宁德时代 H 股出现回落。受消息面影响，部分权重股波动，但整体市场活跃度提升，资金关注方向明确。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">3</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2352859" target="_blank">美股收盘：纳指涨1.64%创历史新高 中东停火延长及稳健财报提振市场情绪</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>中东局势缓和及企业财报稳健共同提振美股，纳斯达克指数涨超 1.6% 并刷新历史纪录。三大期指均现上涨，市场信心增强，显示出对地缘政治风险缓解的乐观预期。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">4</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2352533" target="_blank">特朗普延长对伊朗停火 美股三大期指小幅上涨 | 今夜看点</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>白宫称特朗普未对停火延长设限，美股三大期指随之小幅走高。今日看点涵盖油价、金价同步上涨及中东和平进程，国际局势缓和为金融市场注入积极动力，投资者情绪改善。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">5</div>                <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770558" target="_blank">报道：中石化折价出售宁德时代H股，套现金额超7.6亿美元</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>中石化折价出售宁德时代 H 股，套现规模超 7.6 亿美元。此举引发市场关注，反映出国资调整新能源资产布局的动态。交易完成后，相关个股及行业资金流向可能因此发生变化。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">6</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2352888" target="_blank">布伦特原油突破100美元 美伊仍未能开启第二轮和平谈判 | 环球市场</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>布伦特原油价格突破 100 美元，但美伊第二轮和平谈判尚未启动。油价高位运行反映供需紧张，同时地缘政治博弈持续。市场焦点集中在能源价格波动及中东局势后续发展。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">7</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2352729" target="_blank">四家A股公司同日被立案 均涉信披违法违规|速读公告</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>四家 A 股公司同日遭立案调查，均涉及信息披露违法违规行为。监管层持续打击违规信披行为，警示上市公司需规范运作。投资者需警惕相关公司股价波动及后续处理结果。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">8</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2352894" target="_blank">【早报】 白宫：特朗普未就与伊朗停火延长设最后期限；美股、油价、金价同步上涨</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>白宫确认特朗普未设停火最后期限，美股、油价、金价同步上涨。今日早报显示全球资产价格共振上行，反映出市场对地缘风险缓和的强烈反应，多类资产迎来投资机会。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">9</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2352590" target="_blank">五国国家码接入微信支付  微信与支付宝海外竞争升级</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>微信宣布五国国家码接入支付体系，支付宝海外竞争随之升级。两大巨头加速出海布局，争夺全球移动支付市场份额。此举将改变海外用户支付体验，推动跨境金融科技发展。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">10</div>                <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770611" target="_blank">中办、国办：严格控制化石能源消费，大力发展非化石能源和新型储能，加快建设新型电力系统</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>中办、国办发文严控化石能源消费，强调发展非化石能源、新型储能及新型电力系统。政策导向明确指向绿色低碳转型，未来能源结构优化加速，相关行业将迎来发展机遇。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">11</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2352871" target="_blank">特斯拉Q1利润超预期 自由现金流意外转正 盘后股价涨近4%</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>特斯拉 Q1 利润超预期，自由现金流意外转正，盘后股价近涨 4%。业绩表现强劲印证其商业模式优化，投资者信心提升。自由现金流改善亦缓解市场对其盈利可持续性的担忧。</div>            </div>
-                <div class="list-item-row">                <div class="list-item-bullet">12</div>                <div class="list-item-text"><a href="https://www.cls.cn/detail/2352589" target="_blank">净利同比下降62%！4天3板太空光伏概念股发布2025年年度报告|盘后公告集锦</a></div>            </div>
-                <div class="list-item-row" style="padding-left: 30px;">                <div class="list-item-text"><strong>新闻摘要：</strong>某太空光伏概念股净利同比下降 62%，但凭借连续上涨势头发布 2025 年年报。业绩承压与股价表现形成反差，引发市场对题材炒作与基本面背离的关注，投资者需谨慎甄别风险。</div>            </div>
+                
+                <div class="list-item-row">
+                    <div class="list-item-bullet">1</div>
+                    <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770587" target="_blank">停火延长叠加强劲财报，标普、纳指收创新高，芯片股创最长连涨天数，原油三连涨</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>标普 500 与纳指创历史新高，受停火延长及强劲财报提振，芯片股连涨、原油三连涨，市场整体表现强势。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">2</div>
+                    <div class="list-item-text"><a href="https://wallstreetcn.com/articles/3770666" target="_blank">伊朗局势搅动市场，美股震荡收跌，软件股重挫，芯片逆市连涨17日，原油三连涨</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>受伊朗局势影响，美股震荡收跌，软件股重挫。但在外围不确定性下，芯片股逆市连涨 17 日，原油延续上涨，板块分化明显。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">3</div>
+                    <div class="list-item-text"><a href="https://www.cls.cn/detail/2353930" target="_blank">莫高股份、财信发展、冀凯股份公告：将被实施退市风险警示</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>莫高股份、财信发展及冀凯股份发布公告，因触及相关标准，三家公司将被实施退市风险警示，投资者需关注其后续公告。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">4</div>
+                    <div class="list-item-text"><a href="https://www.cls.cn/detail/2353638" target="_blank">【数据看盘】大族激光龙虎榜现机构与北向资金博弈 多路资金抢筹汇绿生态</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>大族激光龙虎榜显示机构与北向资金激烈博弈，多路资金积极抢筹汇绿生态。数据揭示市场资金流向与板块轮动特征。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">5</div>
+                    <div class="list-item-text"><a href="https://www.cls.cn/detail/2353607" target="_blank">【焦点复盘】沪指高开低走失守4100点，CPO概念现深幅调整，资金逆势抱团红利板块</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>沪指高开低走失守 4100 点，CPO 概念大幅回调，资金转而抱团红利板块。复盘显示市场风格切换，防御属性增强。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">6</div>
+                    <div class="list-item-text"><a href="https://www.cls.cn/detail/2353536" target="_blank">【每日收评】三大指数放量收跌，绿电、煤炭等防御性板块走强，算力硬件股遭遇调整</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>三大指数放量收跌，绿电、煤炭等防御板块走强，算力硬件股遭遇调整。市场呈现高低切换态势，资金寻求避险。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">7</div>
+                    <div class="list-item-text"><a href="https://www.cls.cn/detail/2353506" target="_blank">张坤一季度调整重仓格局，茅台取代腾讯成头号重仓股，强调“已看到国内经济内生企稳的曙光”</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>张坤一季度调整重仓，茅台取代腾讯成为头号重仓股。他强调已看到国内经济内生企稳曙光，投资策略转向内需与价值。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">8</div>
+                    <div class="list-item-text"><a href="https://www.cls.cn/detail/2354164" target="_blank">美股收盘：中东局势不确定性升温叠加财报分化 三大指数震荡收跌</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>美股收盘震荡下跌，中东局势升温与财报分化共同施压。三大指数受制于外部不确定性及企业业绩差异，未能延续涨势。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">9</div>
+                    <div class="list-item-text"><a href="https://www.toutiao.com/trending/7630980116487176255/" target="_blank">银行收缩潮来了吗</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>多家机构探讨银行行业是否出现收缩潮，关注资产质量、不良率及净息差变化，分析潜在风险对银行盈利及扩张的影响。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">10</div>
+                    <div class="list-item-text"><a href="https://www.cls.cn/detail/2353659" target="_blank">倒计时一周！年报行情进入最后冲刺，七成个股实现盈利，这些标的获10倍增速</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>年报行情冲刺在即，七成个股盈利，部分标的获超 10 倍增速。倒计时无一，投资者可关注业绩超预期及高增长潜力企业。</div>
+                </div>
+                <div class="list-item-row">
+                    <div class="list-item-bullet">11</div>
+                    <div class="list-item-text"><a href="https://www.toutiao.com/trending/7631444837368807475/" target="_blank">苹果或被印度罚款380亿美元有何影响</a></div>
+                </div>
+                <div class="list-item-row" style="padding-left: 30px;">
+                    <div class="list-item-text"><strong>新闻摘要：</strong>若苹果被印度罚款 380 亿美元，将直接冲击其营收与利润，可能引发股价波动及供应链调整，需评估地缘政治风险。</div>
+                </div>
             </div>
         </div>
 
+        <!-- 关于我们 -->
+        <div class="card" data-category="footer">
+            <h2>关于我们</h2>
+            <p>📱 公众号名称：三天笔记</p>
+            <p>✍️ 作者：曾三天</p>
+            <div style="text-align:center;margin:20px 0;">
+                <p style="font-size:14px;color:#666;margin-bottom:10px;text-align:center">扫码关注公众号，获取每日最新资讯</p>
+                <img src="https://drgon1.github.io/images/qrcode.jpg" alt="公众号二维码" style="width:200px;height:200px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+            </div>
+        </div>
 
-        <div class="card footer">
-            <div class="footer-section">
-                <h3>关于我们</h3>
-                <p>📱 公众号名称：三天笔记</p>
-                <p>✍️ 作者：曾三天</p>
-                <div class="qr-container">
-                    <p>扫码关注公众号，获取每日最新资讯</p>
-                    <img src="https://drgon1.github.io/images/qrcode.jpg" alt="公众号二维码">
-                </div>
-            </div>
-            <hr>
-            <div class="footer-section">
-                <h3>底部合作与版权</h3>
-                <p><strong>商务合作 / 内容投稿 / 品牌推广</strong></p>
-                <p>请关注公众号「三天笔记」后台留言联系</p>
-            </div>
-            <hr>
-            <p><strong>版权声明</strong>：本文由作者整理，转载需注明出处。</p>
+        <!-- 商务合作与版权 -->
+        <div class="card" data-category="footer">
+            <h2>商务合作与版权</h2>
+            <p><strong style="font-weight:bold;color:#3d6a8a">商务合作 / 内容投稿 / 品牌推广</strong></p>
+            <p>请关注公众号「三天笔记」后台留言联系</p>
+            <hr style="margin-top:32px;margin-bottom:32px;height:1px;background:rgba(58,65,80,0.1);border:none">
+            <p><strong style="font-weight:bold;color:#3d6a8a">版权声明</strong>：本文由作者整理，转载需注明出处。</p>
+            <p style="text-align:center;color:#666;font-size:14px;margin-top:20px;">© 2024 三天笔记 保留所有权利</p>
         </div>
     </div>
 </body>
